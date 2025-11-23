@@ -2,7 +2,7 @@
 
 一个交互式链表数据结构可视化工具，通过直观的界面帮助用户理解链表操作的底层实现原理。
 
-![LinkVis Preview](https://via.placeholder.com/800x400?text=LinkVis+Preview)
+
 
 ## 📋 项目概述
 
