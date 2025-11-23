@@ -2,6 +2,7 @@
 
 一个交互式链表数据结构可视化工具，通过直观的界面帮助用户理解链表操作的底层实现原理。
 
+<img width="1512" height="860" alt="截屏2025-11-23 下午7 29 51" src="https://github.com/user-attachments/assets/2bb26eb4-c225-417b-b36e-d67a4e44c548" />
 
 
 ## 📋 项目概述
