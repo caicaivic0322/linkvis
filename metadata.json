@@ -1,0 +1,5 @@
+{
+  "name": "LinkVis: 链表互动可视化",
+  "description": "一个全面的单向链表动画可视化工具。具有实时逻辑视图与物理内存堆视图对比、逐步遍历动画以及基于 Gemini 的 C++ 实现细节解析。",
+  "requestFramePermissions": []
+}

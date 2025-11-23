@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkVis - Linked List Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['"JetBrains Mono"', 'monospace'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              app: 'var(--bg-app)',
+              panel: 'var(--bg-panel)',
+              'panel-border': 'var(--border)',
+              input: 'var(--bg-input)',
+              main: 'var(--text-main)',
+              muted: 'var(--text-muted)',
+              accent: 'var(--accent)',
+              'accent-hover': 'var(--accent-hover)',
+              'accent-text': 'var(--accent-text)',
+              success: 'var(--success)',
+              error: 'var(--error)',
+              warning: 'var(--warning)',
+            }
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        :root {
+          --bg-app: #ffffff;
+          --bg-panel: #f9fafb;
+          --border: #e5e7eb;
+          --bg-input: #ffffff;
+          --text-main: #111827;
+          --text-muted: #6b7280;
+          --accent: #4f46e5;
+          --accent-hover: #4338ca;
+          --accent-text: #ffffff;
+          --success: #10b981;
+          --error: #ef4444;
+          --warning: #f59e0b;
+        }
+        .dark {
+          --bg-app: #0f172a;
+          --bg-panel: #1e293b;
+          --border: #334155;
+          --bg-input: #334155;
+          --text-main: #f8fafc;
+          --text-muted: #94a3b8;
+          --accent: #818cf8;
+          --accent-hover: #6366f1;
+          --accent-text: #ffffff;
+          --success: #34d399;
+          --error: #f87171;
+          --warning: #fbbf24;
+        }
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-app text-main antialiased transition-colors duration-300">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

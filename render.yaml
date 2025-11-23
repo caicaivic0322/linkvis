@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: linkvis
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+  
+  # 如果需要Node.js后端服务，可以添加以下配置
+  # - type: web
+  #   name: linkvis-api
+  #   env: node
+  #   buildCommand: npm install
+  #   startCommand: node server.js
+  #   envVars:
+  #     - key: NODE_VERSION
+  #       value: 18
